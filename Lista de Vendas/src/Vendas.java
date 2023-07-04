@@ -62,8 +62,10 @@ public class Vendas {
         {
             System.out.println("Venda [" + i + "] = " + this.produto.get(i) + ", Quantidade: " + this.quantidadeVendida.get(i) + ", Valor de venda: R$" + this.valorProduto.get(i));
         }
+        
         // Printa o nome do vendedor
         System.out.println("Vendedor responsáve: " + this.vendedor); 
+
         //Printa o salário, a comissão calculada em cima do valor total das vendas da lista, e também a soma dos dois
         System.out.println("Salario: R$" + this.salario + "\nComissão: " + (totalVendas()*0.15) + "\nTotal: R$" + (this.salario + (totalVendas()*0.15)));
     }
