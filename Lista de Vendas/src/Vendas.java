@@ -28,9 +28,9 @@ public class Vendas {
         else
         {
             //Adicionando o produto, o valor e a quantidade nas listas
-            this.produto.add(index,produto);
-            this.valorProduto.add(index,valorProduto);
-            this.quantidadeVendida.add(index,quantidadeVendida);
+            this.produto.add(produto);
+            this.valorProduto.add(valorProduto);
+            this.quantidadeVendida.add(quantidadeVendida);
             JOptionPane.showMessageDialog(null, "Venda realizada com sucesso!\n Produto: " + this.produto.get(index) + "\nValor do produto: R$" + this.valorProduto.get(index) + "\nQuantidade vendida: " + this.quantidadeVendida.get(index));
             index++;
         }
