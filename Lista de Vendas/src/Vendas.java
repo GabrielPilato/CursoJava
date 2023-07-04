@@ -40,16 +40,16 @@ public class Vendas {
 
     public double totalVendas() 
     {
-        double total = 0;
+        double _total = 0;
 
         /*Um for que passa por toda a lista e multiplica a quantidade vendida e o valor de cada produto vendido
           E soma tudo na variável total.*/
         for (int i = (this.produto.size())-1;i>=0;i--)
         {
-            total = total + (this.quantidadeVendida.get(i) * this.valorProduto.get(i));
+            _total = _total + (this.quantidadeVendida.get(i) * this.valorProduto.get(i));
         }
 
-        return total;
+        return _total;
     }
 
     public void mostrarVendas()
@@ -62,7 +62,7 @@ public class Vendas {
         {
             System.out.println("Venda [" + i + "] = " + this.produto.get(i) + ", Quantidade: " + this.quantidadeVendida.get(i) + ", Valor de venda: R$" + this.valorProduto.get(i));
         }
-        
+
         // Printa o nome do vendedor
         System.out.println("Vendedor responsáve: " + this.vendedor); 
 
