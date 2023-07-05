@@ -1,10 +1,35 @@
 package ContaCorrenteSemTerminal;
+import java.util.Locale;
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 public class Correntista {
 
     public static void main(String[] args) {
-        ContaCorrente conta = new  ContaCorrente("Gabriel Pilato", 1234567, "0820", 1500);
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.ENGLISH);
+
+        //Criando variaveis para armazenar o conteudo digitado para o metodo construtor
+        String nome;
+        int numeroConta;
+        String agencia;
+        double saldo;
+
+        System.out.println("Digite o seu nome por favor: ");
+        nome = scanner.nextLine();
+
+        System.out.println("Digite a agencia: ");
+        agencia = scanner.nextLine();
+
+        System.out.println("Digite o numero da conta");
+        numeroConta = scanner.nextInt();
+
+        System.out.println("Digite o saldo da conta: ");
+        saldo = scanner.nextDouble();
+
+        ContaCorrente conta = new  ContaCorrente(nome, numeroConta, agencia, saldo);
+
+
 
         conta.depositar(1500);
         conta.sacar(10000);
