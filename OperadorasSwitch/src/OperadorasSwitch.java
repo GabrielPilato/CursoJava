@@ -5,7 +5,7 @@ public class OperadorasSwitch {
 
         switch (operadora)
         {
-            case "P":
+            case "B":
             System.out.println("Seu plano possui 100 minutos de ligação");
             break;
 
