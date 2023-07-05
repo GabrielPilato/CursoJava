@@ -25,6 +25,5 @@ public class OperadorasIf {
         {
             System.out.println("Plano não identificado");
         }
-
     }
 }
