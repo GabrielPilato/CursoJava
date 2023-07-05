@@ -1,3 +1,4 @@
+package ContaCorrenteSemTerminal;
 import javax.swing.JOptionPane;
 
 public class Correntista {
