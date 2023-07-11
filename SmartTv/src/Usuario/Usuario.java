@@ -3,6 +3,7 @@ package Usuario;
 import SmartTv.SmartTv;
 
 public class Usuario {
+    String nome;
 
     public static void main (String[] args){
         SmartTv tv = new SmartTv();
