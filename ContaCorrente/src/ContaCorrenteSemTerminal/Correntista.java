@@ -37,6 +37,8 @@ public class Correntista {
         JOptionPane.showMessageDialog(null, "Rendimento neste mes: \nSaldo atual: R$" + conta.getSaldo() + " Redimento: R$" + conta.calcularRendimento());
         conta.sacar(-100);
         conta.depositar(-500);
+
+        scanner.close();
     }
     
 }
